@@ -17,6 +17,8 @@ df = df.drop(["index", "message"], axis=1)
 
 # plot
 fig = px.scatter_geo(df, lat="latitude", lon="longitude")
-fig.show()
 
-print(df)
+if __name__ == '__main__':
+    
+    fig.show()
+    print(df)
